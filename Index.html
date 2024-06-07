@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas Seguras</h1>
+        <form id="passwordForm">
+            <label for="length">Comprimento da Senha:</label>
+            <input type="number" id="length" name="length" min="8" max="128" value="16">
+            <button type="button" onclick="generatePassword()">Gerar Senha</button>
+        </form>
+        <div id="passwordDisplay" class="password-display"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
